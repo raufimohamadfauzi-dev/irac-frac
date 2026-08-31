@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173f2a">
+<title>IRAC + FRAC Timun</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap"><b>🥒 IRAC + FRAC Timun</b><span>pencari bahan aktif</span></div></header>
+<main class="wrap">
+<nav><button class="tab active" data-page="search">Pencarian</button><button class="tab" data-page="resistance">Info Resistensi</button><button class="tab" data-page="about">Tentang Data</button></nav>
+<section id="search" class="page active">
+<div class="hero">
+<h1>Cari hama, penyakit, atau bahan aktif</h1>
+<input id="q" type="search" placeholder="Contoh: thrips, kutu kebul, tungau, embun bulu, abamectin...">
+<div class="filters"><button class="filter active" data-filter="all">Semua</button><button class="filter" data-filter="hama">Hama</button><button class="filter" data-filter="penyakit">Penyakit</button></div>
+</div>
+<div id="status"></div><div id="results" class="cards"></div>
+</section>
+<section id="resistance" class="page">
+<div class="panel"><h2>Info resistensi — versi ringkas</h2>
+<p><b>Kode sama = kelompok cara kerja sama.</b> Mengganti merek tidak otomatis berarti rotasi bila bahan aktif masih berada pada grup IRAC/FRAC yang sama.</p>
+<p>IRAC dan FRAC menyarankan pengelolaan resistensi melalui IPM, pemantauan, dosis label, pembatasan aplikasi berurutan, serta pergantian kelompok cara kerja bila aplikasi lanjutan memang diperlukan.</p>
+<p>Halaman ini hanya informasi. Hasil pencarian utama sengaja tidak memaksa skema rotasi.</p>
+</div>
+</section>
+<section id="about" class="page">
+<div class="panel"><h2>Tentang data</h2>
+<p><b>Indonesia ✓</b> berarti ditemukan bukti label/halaman produk Indonesia yang secara eksplisit menghubungkan bahan aktif/produk dengan mentimun dan sasaran terkait. Kandidat lain adalah referensi global/kelompok cucurbit dan tetap wajib diverifikasi pada label produk Indonesia sebelum digunakan.</p>
+<p>Database tidak memberi dosis otomatis. Registrasi, formulasi, dosis, PHI, jumlah aplikasi, kompatibilitas campuran dan APD mengikuti label produk aktual.</p>
+</div>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>
